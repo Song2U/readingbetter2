@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+
+@import "readingbetter.css";
+
+/* join mypagechange */
+div#radio-group-join   { 
+   text-align :center;
+   width:900px;
+   padding:10px;
+   border:1px solid #666;
+   border-radius: 10px;
+   margin:20px auto;
+}
+
+/* info */
+div#radio-group-mypage   { 
+   text-align :center;
+   width:400px;
+   padding:10px;
+   border:1px solid #666;
+   border-radius: 10px;
+   margin:20px auto; }
+   
+#mypage-table	{ width:500px; text-align:center; left:50% }
+#mypage-center	{ text-align:center; }
+#img-mypage	{ width:100px; height:90px; border:1px solid #333 }   
+#myscore	{ width:50%; margin-left: auto; margin-right: auto; }
+
+/* login */
+#img-login    { width:200px;height:150px;border:1px solid #333 }
+
+
+/* history */
+#myactivity {
+   text-align: center;
+   margin-left: 18%
+}
+
+#img-my {
+   width: 150px;
+   height: 150px;
+   border: 1px solid #333;
+   margin-left: 190px;
+}
+
+#historytable th {
+   font-size: 1.1em;
+   text-align: center;
+}
+
+#historytable td {
+   font-size: 1em;
+   text-align: center;
+}
+
+#historytable {
+   width: 70%;
+   height:auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#myinfo {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#myinfotable {
+   width: 40%;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: 70px;
+}
+
+#idtext {
+   font-weight: bold;
+   font-size: 1em;
+   text-align: center;
+   width: 150px;
+   margin-left: 250px;
+   margin-right: auto;
+}

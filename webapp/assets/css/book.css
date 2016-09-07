@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+
+@import "readingbetter.css";
+
+/* booklist */
+#list	{ margin:20px auto;	width:900px; }
+#list h2	{ text-align: left; margin-bottom:30px; }
+#list #search-form { text-align:center; margin-bottom:20px; }
+#list #book-table { width:100%; border:1px solid #333; font-size:15px; text-align:center }
+#list #book-table,
+#list #book-table td { padding:5px; }
+#list .img-thumbnail	{ width:200px; heigt:200px; }
+#list .table-right	{ text-align:right; }
+#list .table-left	{ text-align:left; }
+
+
+/* solvequiz, makequiz */
+div#content h3   { font-weight:bold; }
+div#content h4   { font-weight:bold; padding:10px 0 10px }
+div#radio-group   { 
+   text-align:left;
+   width:350px;
+   padding:10px;
+   border:1px solid #666;
+   border-radius:10px;
+   margin:20px auto;
+}
+.btn-group-lg>.btn, .btn-lg   { text-align:floatright; }
+
+#solvequiz #solve-quiz-content { padding-top:100px; height:100%; }
+#solvequiz #solve-quiz-content2 { height:100%; }
+#solvequiz .small-menu   {text-align:right; padding-bottom:200px; padding-top:10px;}
+
+#makequiz .small-menu   {text-align:right; padding-bottom:40px; padding-top:10px;}
+
+/* review */
+#img-book,
+#book_info {
+	width:250px;
+}
+
+#img-book {
+	height:auto;
+	border:1px solid #333;
+	margin: 10px;
+}
+
+#board {
+	width: 75%;
+}
+
+.tbl-ex th, 
+.tbl-ex td	{ 
+	padding:1px;	 
+}
+
+#img-singo {
+	width: 20px;
+}
+
+td#review-content {
+	width: 60%;
+}
+
+td#review-modify {
+	width: 70px;
+}
+
+form#review-writeform {
+	width: 100%;
+}
+
+div.form-group {
+	width: 100%;
+}
+
+#review {
+	width: 85%;
+}
+
+/*resultquiz*/
+.small-menu-resultquiz   {text-align:right;padding-bottom: 10px;padding-top:10px;}
+.table-resultquiz   { width:400px;text-align:center; margin-left:240px;}
+.table-resultquiz2   { width:400px;text-align:center; margin-left:240px;}
+#img-result   {width:200px;height:150px;border:1px solid #333}
+.btn-default   {text-align:left;left:50%;margin-left:350px}
+#img-ball   {width:50px;height:50px; margin:10px;}

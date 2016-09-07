@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+@import "readingbetter.css";
+
+/*shop*/
+.small-menu	{text-align:right;padding-bottom: 10px;padding-top:10px;}
+#img-shop	{width:200px;height:200px;}
