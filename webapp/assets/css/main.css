@@ -11,41 +11,15 @@
 	text-align: center;
 	background-color: #FBFEFE;
 }
-
-#loginbox h4 {
-	text-align: left;
-}
-
-#loginbox h4 a {
-	float: right;
-	font-size: 0.75em;
-	
-}
-
-#loginbox form {
-	margin-bottom: 10px;
-}
-
-#myinfo_mini {
-	margin-top: 20px;
-	text-align: left;
-	font-size: 0.85em;
-}
+#loginbox h4 { text-align: left; }
+#loginbox h4 a { float: right; font-size: 0.75em; }
+#loginbox form { margin-bottom: 10px; }
+#myinfo_mini { margin-top: 20px; text-align: left; font-size: 0.85em; }
 
 /* 검색 박스 */
-#search {
-	border:1px solid #149EF9;
-	margin: 10px 0;
-	padding: 10px;
-}
-
-.searchform {
-	text-align: right;
-}
-
-#helpcall {
-	text-align: left;
-}
+#search { border:1px solid #149EF9; margin: 10px 0; padding: 10px; }
+.searchform { text-align: right; }
+#helpcall { text-align: left; }
 
 /* 컨텐츠 */
 #today_book_box,
@@ -62,17 +36,9 @@
 
 /* 탭뷰 */
 .tab-box,
-.tab-box2 {
-	margin: 10px;
-	text-align: center;
-}
-
+.tab-box2 { margin: 10px; text-align: center; }
 .tab-box ul,
-.tab-box2 ul {
-	list-style-type: none;
-	height: 30px;
-}
-
+.tab-box2 ul { list-style-type: none; height: 30px; }
 .tab-box ul li,
 .tab-box2 ul li {
 	float: right;
@@ -85,39 +51,18 @@
 	border-radius: 10px;
 	cursor: pointer;
 }
-
 .tab-box div,
-.tab-box2 div {
-	width: 100%;
-	text-align: center;
-}
-
-.tab-box div {
-	line-height: 200px;
-}
-
+.tab-box2 div { width: 100%; text-align: center; }
+.tab-box div { line-height: 200px; }
 .tab-box ul li.selected,
-.tab-box2 ul li.selected {
-	background-color: #fc6;
-	cursor: default;
-}
+.tab-box2 ul li.selected { background-color: #fc6; cursor: default; }
 
 /* 공지 */
-#notice_list {
-	list-style: disc;
-	text-align: left;
-	margin-left: 20px;
-}
+#notice_list { list-style: disc; text-align: left; margin-left: 20px; }
 
 /* 순위 테이블 */
 /* 테이블 첫번째 열*/
-#mtfirst {
-   width: 40px;
-   text-align: center;
-}
+#mtfirst { width: 40px; text-align: center; }
 
 /* 테이블 두번째, 세번째 열 */
-#mtsecond, #mtthird {
-   width: 80px;
-   text-align: center;
-}
+#mtsecond, #mtthird { width: 80px; text-align: center; }

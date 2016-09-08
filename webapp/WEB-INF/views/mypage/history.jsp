@@ -17,27 +17,27 @@
 			<div id="navigation" class="col-lg-2">
 				<c:import url='/WEB-INF/views/include/navi_mypage.jsp' />
 			</div>
-			<div id="content" class="col-lg-6">
-				<div class="small-menu">
-					<a href="/readingbetter/main">홈</a> > 
-					<a href="/readingbetter/mypage/info">내 정보</a> > 나의 활동
-				</div>
+			<div id="content" class="col-lg-10">
+				<div id="history">
+					<div class="small-menu">
+						<a href="/readingbetter/main">홈</a> > <a
+							href="/readingbetter/mypage/info">내 정보</a> > 나의 활동
+					</div>
+					<p class="menu-title">나의 활동</p>
+					<br>
 
-				<p class="menu-title">나의 활동</p>
-				<br>
-				<div id="myinfo">
 					<div class="col-lg-6">
 						<div id="profile">
-							<img id="img-my" class="img-circle"
+							<img id="img" class="img-circle"
 								src="http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/pikachu.png">
 							<br> <br>
 							<p id="idtext">ID : test01</p>
-
 							<br> <br>
 						</div>
 					</div>
+
 					<div class="col-lg-6">
-						<table id="myinfotable" class="table">
+						<table id="info-table" class="table">
 							<tr>
 								<th>보유 캔디 수 :</th>
 								<td>1개</td>
@@ -52,73 +52,69 @@
 							</tr>
 						</table>
 					</div>
-				</div>
-				<br> <br>
-			</div>
-			<table id="historytable" class="table table-striped">
-				<tr>
-					<th>번호</th>
-					<th>활동</th>
-					<th>상세 내용</th>
-					<th>점수</th>
-					<th>캔디</th>
-					<th>인증</th>
-					<th>날짜</th>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>퀴즈 풀기</td>
-					<td>서울 쥐와 시골 쥐</td>
-					<td>30</td>
-					<td>0</td>
-					<td>실패</td>
-					<td>2016-01-03</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>상점 이용</td>
-					<td>불닭볶음면</td>
-					<td>-</td>
-					<td>-5</td>
-					<td>-</td>
-					<td>2016-01-03</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>퀴즈 풀기</td>
-					<td>강아지와 고양이</td>
-					<td>50</td>
-					<td>3</td>
-					<td>성공</td>
-					<td>2016-01-02</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>퀴즈 풀기</td>
-					<td>토끼와 자라</td>
-					<td>10</td>
-					<td>0</td>
-					<td>실패</td>
-					<td>2016-01-02</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>퀴즈 풀기</td>
-					<td>누가 내 머리에 똥 쌌어</td>
-					<td>100</td>
-					<td>3</td>
-					<td>성공</td>
-					<td>2016-01-01</td>
-				</tr>
-			</table>
-			<br>
-		</div>
-	</div>
-	<div class="row">
-		<div id="footer" class="col-lg-12">
-			<c:import url='/WEB-INF/views/include/footer.jsp' />
-		</div>
-	</div>
 
+					<br> <br>
+					<table id="history-table" class="table table-striped">
+						<tr>
+							<th>번호</th>
+							<th>활동</th>
+							<th>상세 내용</th>
+							<th>점수</th>
+							<th>캔디</th>
+							<th>인증</th>
+							<th>날짜</th>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>퀴즈 풀기</td>
+							<td>서울 쥐와 시골 쥐</td>
+							<td>30</td>
+							<td>0</td>
+							<td>실패</td>
+							<td>2016-01-03</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>상점 이용</td>
+							<td>불닭볶음면</td>
+							<td>-</td>
+							<td>-5</td>
+							<td>-</td>
+							<td>2016-01-03</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>퀴즈 풀기</td>
+							<td>강아지와 고양이</td>
+							<td>50</td>
+							<td>3</td>
+							<td>성공</td>
+							<td>2016-01-02</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>퀴즈 풀기</td>
+							<td>토끼와 자라</td>
+							<td>10</td>
+							<td>0</td>
+							<td>실패</td>
+							<td>2016-01-02</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>퀴즈 풀기</td>
+							<td>누가 내 머리에 똥 쌌어</td>
+							<td>100</td>
+							<td>3</td>
+							<td>성공</td>
+							<td>2016-01-01</td>
+						</tr>
+					</table>
+					<br>
+				</div>
+			</div>
+		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp' />
+	</div>
 </body>
 </html>

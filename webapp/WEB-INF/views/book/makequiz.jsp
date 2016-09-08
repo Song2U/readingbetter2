@@ -19,9 +19,16 @@
 			</div>
 			<div id="content" class="col-lg-10">
 				<div id="makequiz">
-					<div id="solve-quiz-content" class="col-lg-6">
-						<p class="menu-title">문제 내기</p>
-						<img id="img" class="img-thumbnail" src="http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/book.png"><br>
+					<div class="small-menu">
+						<a href="/readingbetter/main">홈</a> > 
+						<a href="/readingbetter/book/list">독서활동</a> > 
+						<a href="/readingbetter/book/list">책 목록</a> > 문제 내기
+					</div>
+					<p class="menu-title">문제 내기</p>
+					<div id="quiz-content" class="col-lg-6">
+						<img id="img" class="img-thumbnail" 
+							src="http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/book.png"><br>
+						
 						<table class="table">
 							<tr>
 								<td>제목</td>
@@ -42,15 +49,10 @@
 						<br>
 					</div>
 
-					<div id="solve-quiz-content2" class="col-lg-6">
-						<p class="small-menu">
-							<a href="/readingbetter/main">홈</a> > 
-							<a href="/readingbetter/book/list">독서활동</a> > 
-							<a href="/readingbetter/book/list">책목록</a> > 문제 내기
-						</p>
+					<div class="col-lg-6">
 						<div id="radio-group">
 							<h4>문제</h4>
-							<textarea class="form-control" rows="3"></textarea>
+							<textarea class="form-control" rows="3"></textarea><br>
 							<h6>보기1</h6>
 							<input type="text" class="form-control" placeholder="Text input"><br>
 							<h6>보기2</h6>
@@ -62,7 +64,7 @@
 
 							<form class="form-horizontal">
 								<div class="form-group">
-									<label for="inputanswer" class="col-sm-2 control-label">정답</label>
+									<br><label for="inputanswer" class="col-sm-2 control-label">정답</label>
 									<div class="col-sm-10">
 										<input type="text" class="form-control" id="inputanswer"
 											placeholder="Text input">
@@ -70,16 +72,12 @@
 								</div>
 							</form>
 						</div>
-						<a class="btn btn-default btn-lg" href="#" role="button">다음</a>
+						<a type="submit" class="btn btn-default" href="/readingbetter/book/list">제출</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div id="footer" class="col-lg-12">
-				<c:import url='/WEB-INF/views/include/footer.jsp' />
-			</div>
-		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp' />
 	</div>
 </body>
 </html>

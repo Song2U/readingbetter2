@@ -26,4 +26,9 @@ public class BookController {
 	public String Review() {		
 		return "book/review";
 	}
+	
+	@RequestMapping("/resultquiz")
+	public String ResultQuiz() {		
+		return "book/resultquiz";
+	}
 }

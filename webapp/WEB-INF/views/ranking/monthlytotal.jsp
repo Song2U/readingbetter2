@@ -19,95 +19,102 @@
 				<c:import url='/WEB-INF/views/include/navi_ranking.jsp' />
 			</div>
 			<div id="content" class="col-lg-6">
-				<div class="small-menu">
-					<a href="/readingbetter/main">홈</a> > 
-					<a href="/readingbetter/ranking/summary">순위</a> > 이번 달 전체 순위
-				</div>
-				<div id="totalrank" class="col-lg-6">
-					<h3 id="title">이번 달 전체 순위</h3>
-					<br>
-					<table id="totaltable" class="table table-striped">
-						<tr>
-							<th>순위</th>
-							<th>아이디</th>
-							<th>점수</th>
-						</tr>
-						<tr>
-							<td id="tfirst">1</td>
-							<td id="tsecond">ID1</td>
-							<td id="tthird">5</td>
-						</tr>
-						<tr>
-							<td id="tfirst">2</td>
-							<td id="tsecond">ID2</td>
-							<td id="tthird">4</td>
-						</tr>
-						<tr>
-							<td id="tfirst">3</td>
-							<td id="tsecond">ID3</td>
-							<td id="tthird">3</td>
-						</tr>
-						<tr>
-							<td id="tfirst">4</td>
-							<td id="tsecond">ID4</td>
-							<td id="tthird">2</td>
-						</tr>
-						<tr>
-							<td id="tfirst">5</td>
-							<td id="tsecond">ID5</td>
-							<td id="tthird">1</td>
-						</tr>
-						<tr>
-							<td id="tfirst">6</td>
-							<td id="tsecond">ID5</td>
-							<td id="tthird">1</td>
-						</tr>
-						<tr>
-							<td id="tfirst">7</td>
-							<td id="tsecond">ID5</td>
-							<td id="tthird">1</td>
-						</tr>
-						<tr>
-							<td id="tfirst">8</td>
-							<td id="tsecond">ID5</td>
-							<td id="tthird">1</td>
-						</tr>
-						<tr>
-							<td id="tfirst">9</td>
-							<td id="tsecond">ID5</td>
-							<td id="tthird">1</td>
-						</tr>
-						<tr>
-							<td id="tfirst">10</td>
-							<td id="tsecond">ID5</td>
-							<td id="tthird">1</td>
-						</tr>
-					</table>
-					<br>
-					<h3 id="title">나의 순위</h3>
-					<br>
-					<table id="mytable" class="table table-striped">
-						<tr>
-							<th id="tfirst">순위</th>
-							<th id="tsecond">아이디</th>
-							<th id="tthird">점수</th>
-						</tr>
-						<tr>
-							<td id="tfirst">1</td>
-							<td id="tsecond">null
-							<td id="tthird">0</td>
-						</tr>
-					</table>
-					<br>
+				<div id="monthlytotal">
+					<div class="small-menu">
+						<a href="/readingbetter/main">홈</a> > <a
+							href="/readingbetter/ranking/summary">순위</a> > 이번 달 전체 순위
+					</div>
+					<div id="rank-table" class="col-lg-6">
+						<P id="title">이번 달 전체 순위</P>
+						<br>
+						<table class="table table-striped">
+							<colgroup>
+								<col width="20%" />
+								<col width="40%" />
+								<col width="40%" />
+							</colgroup>
+							<tr>
+								<th>순위</th>
+								<th>아이디</th>
+								<th>점수</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>ID1</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>ID2</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>ID3</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>ID4</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>ID5</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>ID5</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>ID5</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>ID5</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>ID5</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>ID5</td>
+								<td>1</td>
+							</tr>
+						</table>
+						<br>
+						<p id="title">나의 순위</p>
+						<br>
+						<table class="table table-striped">
+							<colgroup>
+								<col width="20%" />
+								<col width="40%" />
+								<col width="40%" />
+							</colgroup>
+							<tr>
+								<th>순위</th>
+								<th>아이디</th>
+								<th>점수</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>null
+								<td>0</td>
+							</tr>
+						</table>
+						<br>
+					</div>
 				</div>
 			</div>
 		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp' />
 	</div>
-	<div class="row">
-		<div id="footer" class="col-lg-12">
-			<c:import url='/WEB-INF/views/include/footer.jsp' />
-		</div>
-	</div>
-
 </body>
 </html>

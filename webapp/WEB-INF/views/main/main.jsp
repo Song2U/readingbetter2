@@ -7,20 +7,14 @@
 <head>
 <title>ReadingBetter</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
 <link href="/readingbetter/assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="/readingbetter/assets/css/main.css" rel="stylesheet"type="text/css">
-
 <script type="text/javascript" src="/readingbetter/assets/js/jquery/jquery-1.9.0.js"></script>
 <script type="text/javascript" src="/readingbetter/assets/js/jquery/main.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<div id="header" class="col-lg-12">
-			<c:import url='/WEB-INF/views/include/header.jsp' />
-			</div>
-		</div>
+		<c:import url='/WEB-INF/views/include/header.jsp' />
 		<div class="row asideWrap">
 			<div class="col-lg-2" id="navigation">
 				<c:import url='/WEB-INF/views/include/navi_main.jsp' />
@@ -129,11 +123,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div id="footer" class="col-lg-12">
-				<c:import url='/WEB-INF/views/include/footer.jsp' />
-			</div>
-		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp' />
 	</div>
 </body>
 </html>

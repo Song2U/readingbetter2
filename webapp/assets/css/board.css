@@ -139,3 +139,52 @@ input[type="submit"] {
 input#kwd	{
 	width:250px;
 }
+
+/* 댓글 */
+.tbl-ex th, 
+.tbl-ex td   { 
+   padding:1px;    
+}
+
+#img-singo {
+   width: 20px;
+}
+
+td#review-content {
+   width: 60%;
+}
+
+td#review-modify {
+   width: 70px;
+}
+
+form#review-writeform {
+   width: 100%;
+}
+
+div.form-group {
+   width: 100%;
+}
+
+#review {
+   width: 85%;
+}
+
+/* wishbook */
+/* 테이블 내부 가운데 정렬 */
+#wishbookwrite #board td, #board th {
+   vertical-align: middle;
+   text-align: center;
+}
+
+/* 제출 버튼 크기 지정 */
+#wishbookwrite #submit {
+   text-align: center;
+   width: 100px;
+   height: 40px;
+}
+
+/* 버튼 정렬, 위치 지정*/
+#wishbookwrite #buttonalign {
+   text-align: right;
+}

@@ -8,7 +8,7 @@
 <title>ReadingBetter</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href="/readingbetter/assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="/readingbetter/assets/css/service.css" rel="stylesheet" type="text/css">
+<link href="/readingbetter/assets/css/board.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -64,7 +64,7 @@
 						</tr>
 					</table>
 					<div id="button-set">
-						<button class="btn btn-default">글쓰기</button>
+						<a class="btn btn-default" href="/readingbetter/service/wishbookwrite" role="button">글쓰기</a>
 					</div>
 
 					<!-- begin:paging -->

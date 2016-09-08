@@ -18,61 +18,60 @@
 				<c:import url='/WEB-INF/views/include/navi_mypage.jsp' />
 			</div>
 			<div id="content" class="col-lg-10">
-				<p class="small-menu">
-					<a href="/readingbetter/main">홈</a> > 
-					<a href="/readingbetter/mypage/info">내정보</a> > 내정보 보기
-				</p>
-				<p class="menu-title">내 정보 보기</p>
+				<div id="info">
+					<div class="small-menu">
+						<a href="/readingbetter/main">홈</a> > 
+						<a href="/readingbetter/mypage/info">내정보</a> > 내정보 보기
+					</div>
+					<p class="menu-title">내 정보 보기</p>
 
-				<div id="radio-group-mypage">
-					<form class="form-horizontal">
-						<img id="img-mypage" class="img-circle"
-							src="http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/pikachu.png"><br>
-						<br>
-						<div class="form-group">
-							<label class="col-sm-3 control-label">초등학교</label>
-							<div class="col-sm-9">
-								<p class="form-control-static">두더지 초등학교</p>
+					<div id="radio-group">
+						<form class="form-horizontal">
+							<img id="img-mypage" class="img-circle"
+								src="http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/pikachu.png"><br>
+							<br>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">초등학교</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">두더지 초등학교</p>
+								</div>
 							</div>
-						</div>
 
-						<div class="form-group">
-							<label class="col-sm-3 control-label">학년 반</label>
-							<div class="col-sm-9">
-								<p class="form-control-static">2학년 4반</p>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">학년 반</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">2학년 4반</p>
+								</div>
 							</div>
-						</div>
+						</form>
+					</div>
 
-					</form>
-				</div>
+					<div id="radio-group">
+						<h4>연락처</h4>
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">기본이메일</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">kmg878@naver.com</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">본인 확인 이메일</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">kmg878@naver.com</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">휴대전화</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">010-7274-3349</p>
+								</div>
+							</div>
+							<a class="btn btn-default" href="/readingbetter/mypage/change" role="button">수정하기</a>
+						</form>
+					</div>
 
-				<div id="radio-group-mypage">
-					<h4>연락처</h4>
-					<form class="form-horizontal">
-						<div class="form-group">
-							<label class="col-sm-3 control-label">기본이메일</label>
-							<div class="col-sm-9">
-								<p class="form-control-static">kmg878@naver.com</p>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-3 control-label">본인 확인 이메일</label>
-							<div class="col-sm-9">
-								<p class="form-control-static">kmg878@naver.com</p>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-3 control-label">휴대전화</label>
-							<div class="col-sm-9">
-								<p class="form-control-static">010-7274-3349</p>
-							</div>
-						</div>
-						<a class="btn btn-default" href="/readingbetter/mypage/change" role="button">수정</a>
-					</form>
-				</div>
-				
-				<div id="myscore">
-					<table class="table table-striped" id="mypage-table">
+					<table class="table table-striped" id="myscore-table">
 						<tr>
 							<td>캔디 수</td>
 							<br>
@@ -89,11 +88,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div id="footer" class="col-lg-12">
-				<c:import url='/WEB-INF/views/include/footer.jsp' />
-			</div>
-		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp' />		
 	</div>
 </body>
 </html>

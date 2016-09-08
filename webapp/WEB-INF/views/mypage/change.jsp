@@ -18,109 +18,93 @@
 				<c:import url='/WEB-INF/views/include/navi_mypage.jsp' />
 			</div>
 			<div id="content" class="col-lg-10">
-				<div class="small-menu">
-					<a href="/readingbetter/main">홈</a> > 
-					<a href="/readingbetter/mypage/info">내정보</a> > 
-					<a href="/readingbetter/mypage/info">내정보 보기</a> > 내정보 수정
+				<div id="chage">
+					<div class="small-menu">
+						<a href="/readingbetter/main">홈</a> > <a
+							href="/readingbetter/mypage/info">내정보</a> > <a
+							href="/readingbetter/mypage/info">내정보 보기</a> > 내정보 수정
+					</div>
+					<p class="menu-title">내 정보 수정</p>
+
+					<div id="radio-group">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">이름</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="inputName" placeholder="Name">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">아이디</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="inputID" placeholder="ID">
+								</div>
+								<div class="col-sm-1">
+									<a class="btn btn-default" role="button">중복확인</a>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">비밀번호</label>
+								<div class="col-sm-6">
+									<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">이메일</label>
+								<div class="col-sm-6">
+									<input type="Email" class="form-control" id="inputEmail" placeholder="Email">
+								</div>
+								<div class="col-sm-1">
+									<a class="btn btn-default" role="button">중복확인</a>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">전화번호</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="inputPhone" placeholder="PhoneNumber">
+								</div>
+							</div>
+
+
+							<label class="radio-inline"> <input type="radio"
+								name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								초등학생
+							</label> <label class="radio-inline"> <input type="radio"
+								name="inlineRadioOptions" id="inlineRadio2" value="option3">기타
+							</label> <br> <br>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">학교이름</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="inputSchoolName" placeholder="SchoolName">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">학년</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="inputSchoolGrade"
+										placeholder="Grade">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">반</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="inputSchoolClass" placeholder="Class">
+								</div>
+							</div>
+							<a class="btn btn-default" href="/readingbetter/mypage/info" type="submit">수정하기</a>
+						</form>
+					</div>
 				</div>
-				<p class="menu-title">내 정보 수정</p>
-
-				<div id="radio-group-join">
-					<form class="form-horizontal">
-						<div class="form-group">
-							<label for="inputname" class="col-sm-3 control-label">이름</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" id="inputName" placeholder="Name">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="inputId" class="col-sm-3 control-label">아이디</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" id="inputID" placeholder="ID">
-							</div>
-							<div class="col-sm-1">
-								<a class="btn btn-default" href="#" role="button">중복확인</a>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="inputPassword" class="col-sm-3 control-label">비밀번호</label>
-							<div class="col-sm-6">
-								<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="inputEmail" class="col-sm-3 control-label">이메일</label>
-							<div class="col-sm-6">
-								<input type="Email" class="form-control" id="inputEmail" placeholder="Email">
-							</div>
-							<div class="col-sm-1">
-								<a class="btn btn-default" href="#" role="button">중복확인</a>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="inputPhone" class="col-sm-3 control-label">전화번호</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" id="inputPhone" placeholder="PhoneNumber">
-							</div>
-						</div>
-
-
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 초등학생
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option3">기타
-						</label>
-						<br>
-						<br>
-
-						<div class="form-group">
-							<label for="inputSchoolName" class="col-sm-3 control-label">학교이름</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" id="inputSchoolName" placeholder="SchoolName">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="inputGrade" class="col-sm-3 control-label">학년</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" id="inputSchoolGrade" placeholder="Grade">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="inputClass" class="col-sm-3 control-label">반</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" id="inputSchoolClass" placeholder="Class">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<button type="submit" class="btn btn-default">수정하기</button>
-							</div>
-						</div>
-
-
-					</form>
-				</div>
-
-
-
-
-
-
 			</div>
 		</div>
-		<div class="row">
-			<div id="footer" class="col-lg-12">
-				<c:import url='/WEB-INF/views/include/footer.jsp' />
-			</div>
-		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp' />
 	</div>
 </body>
 </html>

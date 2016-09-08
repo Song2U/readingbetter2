@@ -5,8 +5,10 @@
 	pageEncoding="UTF-8"%>
 <div class="row">
 	<div id="header" class="col-lg-12">
-		<img id="img"
-			src="http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/rb_logo.png">
+		<a href="/readingbetter/main">
+			<img id="img"
+				src="http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/rb_logo.png">
+		</a>
 		<ul id="headeritem1">
 			<li><a href="/readingbetter/mypage/login">로그인</a></li>
 			<li><a href="/readingbetter/mypage/join">회원가입</a></li>

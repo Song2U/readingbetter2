@@ -21,4 +21,19 @@ public class ServiceController {
 	public String WishBook() {
 		return "service/wishbook";
 	}
+	
+	@RequestMapping("/questionview")
+	public String QuestionView() {
+		return "service/questionview";
+	}
+	
+	@RequestMapping("/questionwrite")
+	public String QuestionWrite() {
+		return "service/questionwrite";
+	}
+	
+	@RequestMapping("/wishbookwrite")
+	public String WishBookWrite() {
+		return "service/wishbookwrite";
+	}
 }

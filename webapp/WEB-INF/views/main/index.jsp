@@ -19,11 +19,7 @@
 			</div>
 			<div id="content" class="col-lg-10">컨텐츠</div>
 		</div>
-		<div class="row">
-			<div id="footer" class="col-lg-12">
-				<c:import url='/WEB-INF/views/include/footer.jsp'/>
-			</div>
-		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp'/>
 	</div>
 </body>
 </html>

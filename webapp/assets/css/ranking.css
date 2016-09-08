@@ -3,83 +3,26 @@
 @import "readingbetter.css";
 
 /* 랭킹 공통 */
+#title { font-weight:bold; text-align:center; font-size:20px;} /* 테이블 제목 */
+#rank-table { width:70%; left:17%; right:10%; } /* 테이블 크기, 위치 지정 */
+#rank-table th { text-align:center; font-size:1.5em; } /* 테이블 상위 row 폰트 속성 지정 */
+#rank-table td { text-align:center; font-size:1em; } /* 테이블 상위 제외한 나머지 부분 폰트 속성 지정 */
 
-/* 첫번째 행 크기 지정 */
-#tfirst {
-	width: 20%;
-}
-
-/*두번째, 세번째 행 크기 지정 */
-#tsecond, #tthird {
-	width: 40%;
-}
-
-/* 테이블 제목 */
-#title {
-	font-weight: bold;
-	text-align: center;
-}
 
 /* summary */
-
-/* 왼쪽 테이블 묶음 */
-#table1, #table2 {
-	text-align: center;
-	width: 50%;
-	left: 3%;
+#summary #table { width:50%; } /* 왼쪽 테이블 묶음 */
+#summary #ltable,
+#summary #rtable { /* summary 테이블 공통*/
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
 }
-
-/* 테이블 공통 */
-#ltable, #rtable {
-	text-align: center;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-}
-/* 테이블 첫번쨰 행*/
-#ltable th, #rtable th {
-	text-align: center;
-	font-size: 1.5em;
-}
-/* 테이블 첫번째 행을 제외한 나머지 행 */
-#ltable td, #rtable td {
-	font-size: 1em;
-}
-
-/* monthlytotal, monthlyschool, monthlygrade*/
-
-/* 테이블 크기, 위치 지정 */
-#totalrank {
-	width: 70%;
-	left: 17%;
-	right: 10%;
-}
-
-/* 테이블 상위 row 폰트 속성 지정 */
-#totaltable th, #mytable th {
-	text-align: center;
-	font-size: 1.5em;
-}
-
-/* 테이블 상위 제외한 나머지 부분 폰트 속성 지정 */
-#totaltable td, #mytable td {
-	text-align: center;
-	font-size: 1em;
-}
+#summary #ltable th,
+#summary #rtable th { font-size:1.5em; text-align:center;} /* 테이블 첫번쨰 행*/
+#summary #ltable td,
+#summary #rtable td { font-size:1em; } /* 테이블 첫번째 행을 제외한 나머지 행 */
 
 /* honor */
-
-/* 이미지 크기 (없어질 수 있음)*/
-#top3image {
-	width: 80%;
-	height:380px;
-}
-
-#top3{
-	
-}
-
-#honortable{
-	
-}
+#honor #top3-image { width:80%; height:380px; } /* 이미지 크기 (없어질 수 있음)*/
+#honor #top3{  }
+#honor #honor-table th { font-size:1.5em; text-align:center; }

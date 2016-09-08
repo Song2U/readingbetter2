@@ -2,81 +2,69 @@
 
 @import "readingbetter.css";
 
-/* join mypagechange */
-div#radio-group-join   { 
-   text-align :center;
-   width:900px;
-   padding:10px;
-   border:1px solid #666;
-   border-radius: 10px;
-   margin:20px auto;
+/* 테이블 공통 */
+#radio-group	{
+	text-align:center;
+   	width:900px;
+   	padding:10px;
+   	border:1px solid #666;
+   	border-radius:10px;
+   	margin:20px auto;
 }
 
 /* info */
-div#radio-group-mypage   { 
-   text-align :center;
+#info #radio-group	{ 
+   text-align:center;
    width:400px;
    padding:10px;
    border:1px solid #666;
-   border-radius: 10px;
-   margin:20px auto; }
-   
-#mypage-table	{ width:500px; text-align:center; left:50% }
-#mypage-center	{ text-align:center; }
-#img-mypage	{ width:100px; height:90px; border:1px solid #333 }   
-#myscore	{ width:50%; margin-left: auto; margin-right: auto; }
+   border-radius:10px;
+   margin:20px auto;
+}
+#info #img-mypage	{ width:100px; height:100px; border:1px solid #333 }   
+#info #myscore-table	{ width:50%; margin-left:auto; margin-right:auto; }
+
 
 /* login */
-#img-login    { width:200px;height:150px;border:1px solid #333 }
+#login #img-login    { width:200px; height:200px; border:1px solid #333 }
+#login #radio-group	{ 
+   text-align:center;
+   width:400px;
+   padding:10px;
+   border:1px solid #666;
+   border-radius:10px;
+   margin:20px auto;
+}
 
 
 /* history */
-#myactivity {
-   text-align: center;
-   margin-left: 18%
+#history #myactivity { text-align:center; margin-left:18% }
+#history #img {
+   width:150px;
+   height:150px;
+   border:1px solid #333;
+   margin-left:190px;
 }
-
-#img-my {
-   width: 150px;
-   height: 150px;
-   border: 1px solid #333;
-   margin-left: 190px;
-}
-
-#historytable th {
-   font-size: 1.1em;
-   text-align: center;
-}
-
-#historytable td {
-   font-size: 1em;
-   text-align: center;
-}
-
-#historytable {
-   width: 70%;
+#history #history-table {
+   width:70%;
    height:auto;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left:auto;
+   margin-right:auto;
+   font-size:1em;
 }
-
-#myinfo {
-   margin-left: auto;
-   margin-right: auto;
+#history #history-table th { font-size:1.1em; text-align:center;}
+#history .col-lg-6 { margin-left:auto; margin-right:auto; }
+#history #info-table {
+   width:40%;
+   margin-top:40px;
+   margin-bottom:40px;
+   margin-left:70px;
 }
-
-#myinfotable {
-   width: 40%;
-   margin-top: 40px;
-   margin-bottom: 40px;
-   margin-left: 70px;
-}
-
-#idtext {
-   font-weight: bold;
-   font-size: 1em;
-   text-align: center;
-   width: 150px;
-   margin-left: 250px;
-   margin-right: auto;
+#history #idtext {
+   font-weight:bold;
+   font-size:1em;
+   text-align:center;
+   width:150px;
+   margin-left:250px;
+   margin-right:auto;
 }

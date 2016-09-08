@@ -56,7 +56,8 @@
 						<tr>
 							<td class="table-right">추천학년</td>
 							<td class="table-left">?</td>
-							<td><a class="btn btn-default" href="/readingbetter/book/review" role="button">리뷰보기</a>
+							<td>
+								<a class="btn btn-default" href="/readingbetter/book/review" role="button">리뷰보기</a>
 								<a class="btn btn-default" href="/readingbetter/book/solvequiz" role="button">문제풀기</a>
 								<a class="btn btn-default" href="/readingbetter/book/makequiz" role="button">문제내기</a>
 							</td>
@@ -80,11 +81,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div id="footer" class="col-lg-12">
-				<c:import url='/WEB-INF/views/include/footer.jsp' />
-			</div>
-		</div>
+		<c:import url='/WEB-INF/views/include/footer.jsp' />
 	</div>
 </body>
 </html>
