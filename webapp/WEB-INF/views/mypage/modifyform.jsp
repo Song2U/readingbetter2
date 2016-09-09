@@ -14,13 +14,17 @@
 	<div class="container-fluid">
 		<c:import url='/WEB-INF/views/include/header.jsp' />
 		<div class="row asideWrap">
-			<div id="navigation" class="col-lg-2"></div>
+			<div id="navigation" class="col-lg-2">
+				<c:import url='/WEB-INF/views/include/navi_mypage.jsp' />
+			</div>
 			<div id="content" class="col-lg-10">
-				<div id="join">
+				<div id="chage">
 					<div class="small-menu">
-						<a href="/readingbetter/main">홈</a> > 회원가입
+						<a href="/readingbetter/main">홈</a> > <a
+							href="/readingbetter/mypage/info">내정보</a> > <a
+							href="/readingbetter/mypage/info">내정보 보기</a> > 내정보 수정
 					</div>
-					<p class="menu-title">회원가입</p>
+					<p class="menu-title">내 정보 수정</p>
 
 					<div id="radio-group">
 						<form class="form-horizontal">
@@ -66,12 +70,12 @@
 							</div>
 
 
-							<label class="radio-inline">
-								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">초등학생
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option3">기타
-							</label><br><br>
+							<label class="radio-inline"> <input type="radio"
+								name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								초등학생
+							</label> <label class="radio-inline"> <input type="radio"
+								name="inlineRadioOptions" id="inlineRadio2" value="option3">기타
+							</label> <br> <br>
 
 							<div class="form-group">
 								<label class="col-sm-3 control-label">학교이름</label>
@@ -83,7 +87,8 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">학년</label>
 								<div class="col-sm-6">
-									<input type="text" class="form-control" id="inputSchoolGrade" placeholder="Grade">
+									<input type="text" class="form-control" id="inputSchoolGrade"
+										placeholder="Grade">
 								</div>
 							</div>
 
@@ -93,7 +98,7 @@
 									<input type="text" class="form-control" id="inputSchoolClass" placeholder="Class">
 								</div>
 							</div>
-							<a class="btn btn-default" href="/readingbetter/mypage/login" type="submit">가입하기</a>
+							<a class="btn btn-default" type="submit">수정하기</a>
 						</form>
 					</div>
 				</div>

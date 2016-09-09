@@ -21,8 +21,8 @@
 				<div id="resultquiz">
 					<div class="small-menu">
 						<a href="/readingbetter/main">홈</a> > 
-						<a href="/readingbetter/book/list">독서활동</a> > 
-						<a href="/readingbetter/book/list">책목록</a> > 문제 풀기 > 결과 화면
+						<a href="/readingbetter/book/booklist">독서활동</a> > 
+						<a href="/readingbetter/book/booklist">책목록</a> > 문제 풀기 > 결과 화면
 					</div>
 					<p class="menu-title">퀴즈 결과</p>
 					<br>

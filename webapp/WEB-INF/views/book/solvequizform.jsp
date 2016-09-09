@@ -21,8 +21,8 @@
 				<div id="solvequiz">
 					<div class="small-menu">
 						<a href="/readingbetter/main">홈</a> > 
-						<a href="/readingbetter/book/list">독서활동</a> > 
-						<a href="/readingbetter/book/list">책 목록</a> > 문제 풀기
+						<a href="/readingbetter/book/booklist">독서활동</a> > 
+						<a href="/readingbetter/book/booklist">책 목록</a> > 문제 풀기
 					</div>
 					<p class="menu-title">문제 풀기</p>
 					<form class="form-horizontal">

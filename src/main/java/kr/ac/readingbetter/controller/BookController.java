@@ -7,19 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/book")
 public class BookController {
 	
-	@RequestMapping("/list")
+	@RequestMapping("/booklist")
 	public String BookList() {		
-		return "book/list";
+		return "book/booklist";
 	}
 	
-	@RequestMapping("/solvequiz")
-	public String SolveQuiz() {		
-		return "book/solvequiz";
+	@RequestMapping("/solvequizform")
+	public String SolveQuizForm() {		
+		return "book/solvequizform";
 	}
 	
-	@RequestMapping("/makequiz")
-	public String MakeQuiz() {		
-		return "book/makequiz";
+	@RequestMapping("/makequizform")
+	public String MakeQuizForm() {		
+		return "book/makequizform";
 	}
 	
 	@RequestMapping("/review")

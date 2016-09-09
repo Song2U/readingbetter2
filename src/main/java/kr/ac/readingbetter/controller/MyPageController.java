@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/mypage")
 public class MyPageController {
 	
-	@RequestMapping("/join")
-	public String Join() {
-		return "mypage/join";
+	@RequestMapping("/joinform")
+	public String JoinForm() {
+		return "mypage/joinform";
 	}
 	
-	@RequestMapping("/change")
-	public String Change() {
-		return "mypage/change";
+	@RequestMapping("/modifyform")
+	public String ModifyForm() {
+		return "mypage/modifyform";
 	}
 	
 	@RequestMapping("/info")
@@ -22,14 +22,14 @@ public class MyPageController {
 		return "mypage/info";
 	}
 	
-	@RequestMapping("/login")
-	public String Login() {
-		return "mypage/login";
+	@RequestMapping("/loginform")
+	public String LoginForm() {
+		return "mypage/loginform";
 	}
 	
-	@RequestMapping("/findjoin")
-	public String FindJoin() {
-		return "mypage/findjoin";
+	@RequestMapping("/findform")
+	public String FindForm() {
+		return "mypage/findform";
 	}
 	
 	@RequestMapping("/history")

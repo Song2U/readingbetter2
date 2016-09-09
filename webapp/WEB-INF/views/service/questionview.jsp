@@ -23,8 +23,8 @@
 				<div id="questionview">
 					<div class="small-menu">
 						<a href="/readingbetter/main">홈</a> > 
-						<a href="/readingbetter/service/notice">고객센터</a> > 
-						<a href="/readingbetter/service/question"> 문의 게시판 </a> > 글보기
+						<a href="/readingbetter/service/noticelist">고객센터</a> > 
+						<a href="/readingbetter/service/questionlist"> 문의 게시판 </a> > 글보기
 					</div>
 
 					<p class="menu-title">문의 게시판</p>
@@ -44,7 +44,7 @@
 							</tr>
 						</table>
 						<div id="buttonalign">
-							<a href="/readingbetter/service/question" class="btn btn-default">목록</a><br><br>
+							<a href="/readingbetter/service/questionlist" class="btn btn-default">목록</a><br><br>
 						</div>
 					</div>
 				</div>

@@ -67,7 +67,7 @@
 									<p class="form-control-static">010-7274-3349</p>
 								</div>
 							</div>
-							<a class="btn btn-default" href="/readingbetter/mypage/change" role="button">수정하기</a>
+							<a class="btn btn-default" href="/readingbetter/mypage/modifyform" role="button">수정하기</a>
 						</form>
 					</div>
 

@@ -8,7 +8,7 @@
 <title>ReadingBetter</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href="/readingbetter/assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="/readingbetter/assets/css/main.css" rel="stylesheet"type="text/css">
+<link href="/readingbetter/assets/css/main.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="/readingbetter/assets/js/jquery/jquery-1.9.0.js"></script>
 <script type="text/javascript" src="/readingbetter/assets/js/jquery/main.js"></script>
 </head>
@@ -19,105 +19,107 @@
 			<div class="col-lg-2" id="navigation">
 				<c:import url='/WEB-INF/views/include/navi_main.jsp' />
 			</div>
-			<div class="col-lg-10">
-				<div class="col-lg-6">
-					<div id="today_book_box">
-						<h4>오늘의 책</h4>
-						<div class="tab-box">
-							<div>컨텐츠</div>
-							<ul>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
+			<div id="content" class="col-lg-10">
+				<div id="main">
+					<div class="col-lg-6" >
+						<div id="today_book_box">
+							<h4>오늘의 책</h4>
+							<div class="tab-box">
+								<div>컨텐츠</div>
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="notice_box">
+							<h4>공지</h4>
+							<ul id="notice_list">
+								<li><a href="">공지입니다</a></li>
 							</ul>
 						</div>
 					</div>
-					
-					<div id="notice_box">
-						<h4>공지</h4>
-						<ul id="notice_list">
-							<li><a href="">공지입니다</a></li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="col-lg-6">
-					<div id="ranking_box" class="tab-box2">
-						<h4>순위</h4>
-						<div id="total_rank">
-							<label>이번 달 전체 순위</label>
-							<table id="ltable" class="table table-striped">
-								<tr>
-									<td id="mtrtext">순위</td>
-									<td id="mtrtext">아이디</td>
-									<td id="mtrtext">점수</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">1</td>
-									<td id="mtsecond">ID1</td>
-									<td id="mtthird">5</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">2</td>
-									<td id="mtsecond">ID2</td>
-									<td id="mtthird">4</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">3</td>
-									<td id="mtsecond">ID3</td>
-									<td id="mtthird">3</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">4</td>
-									<td id="mtsecond">ID4</td>
-									<td id="mtthird">2</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">5</td>
-									<td id="mtsecond">ID5</td>
-									<td id="mtthird">1</td>
-								</tr>
-							</table>
-						</div>
-						<div id="honor_rank">
-							<label>명예의 전당 순위</label>
-							<table id="ltable" class="table table-striped">
-								<tr>
-									<td id="mtrtext">순위</td>
-									<td id="mtrtext">아이디</td>
-									<td id="mtrtext">점수</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">1</td>
-									<td id="mtsecond">ID1</td>
-									<td id="mtthird">5</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">2</td>
-									<td id="mtsecond">ID2</td>
-									<td id="mtthird">4</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">3</td>
-									<td id="mtsecond">ID3</td>
-									<td id="mtthird">3</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">4</td>
-									<td id="mtsecond">ID4</td>
-									<td id="mtthird">2</td>
-								</tr>
-								<tr>
-									<td id="mtfirst">5</td>
-									<td id="mtsecond">ID5</td>
-									<td id="mtthird">1</td>
-								</tr>
-							</table>
-							<ul>
-								<li></li>
-								<li></li>
-							</ul>
+
+					<div class="col-lg-6">
+						<div id="ranking_box" class="tab-box2">
+							<h4>순위</h4>
+							<div id="total_rank">
+								<label>이번 달 전체 순위</label>
+								<table id="ltable" class="table table-striped">
+									<tr>
+										<td id="mtrtext">순위</td>
+										<td id="mtrtext">아이디</td>
+										<td id="mtrtext">점수</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">1</td>
+										<td id="mtsecond">ID1</td>
+										<td id="mtthird">5</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">2</td>
+										<td id="mtsecond">ID2</td>
+										<td id="mtthird">4</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">3</td>
+										<td id="mtsecond">ID3</td>
+										<td id="mtthird">3</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">4</td>
+										<td id="mtsecond">ID4</td>
+										<td id="mtthird">2</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">5</td>
+										<td id="mtsecond">ID5</td>
+										<td id="mtthird">1</td>
+									</tr>
+								</table>
+							</div>
+							<div id="honor_rank">
+								<label>명예의 전당 순위</label>
+								<table id="ltable" class="table table-striped">
+									<tr>
+										<td id="mtrtext">순위</td>
+										<td id="mtrtext">아이디</td>
+										<td id="mtrtext">점수</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">1</td>
+										<td id="mtsecond">ID1</td>
+										<td id="mtthird">5</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">2</td>
+										<td id="mtsecond">ID2</td>
+										<td id="mtthird">4</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">3</td>
+										<td id="mtsecond">ID3</td>
+										<td id="mtthird">3</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">4</td>
+										<td id="mtsecond">ID4</td>
+										<td id="mtthird">2</td>
+									</tr>
+									<tr>
+										<td id="mtfirst">5</td>
+										<td id="mtsecond">ID5</td>
+										<td id="mtthird">1</td>
+									</tr>
+								</table>
+								<ul>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

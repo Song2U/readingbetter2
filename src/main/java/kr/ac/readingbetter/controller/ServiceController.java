@@ -7,19 +7,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/service")
 public class ServiceController {
 	
-	@RequestMapping("/notice")
-	public String Notice() {
-		return "service/notice";
+	// 공지
+	@RequestMapping("/noticelist")
+	public String NoticeList() {
+		return "service/noticelist";
 	}
 	
-	@RequestMapping("/question")
-	public String Question() {
-		return "service/question";
+	@RequestMapping("/noticeview")
+	public String NoticeView() {
+		return "service/noticeview";
 	}
 	
-	@RequestMapping("/wishbook")
-	public String WishBook() {
-		return "service/wishbook";
+	// 문의
+	@RequestMapping("/questionlist")
+	public String QuestionList() {
+		return "service/questionlist";
 	}
 	
 	@RequestMapping("/questionview")
@@ -32,8 +34,19 @@ public class ServiceController {
 		return "service/questionwrite";
 	}
 	
+	// 희망도서
+	@RequestMapping("/wishbooklist")
+	public String WishBookList() {
+		return "service/wishbooklist";
+	}
+	
 	@RequestMapping("/wishbookwrite")
 	public String WishBookWrite() {
 		return "service/wishbookwrite";
+	}
+	
+	@RequestMapping("/wishbookview")
+	public String WishBookView() {
+		return "service/wishbookview";
 	}
 }

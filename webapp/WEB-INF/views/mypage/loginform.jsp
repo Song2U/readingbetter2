@@ -42,9 +42,9 @@
 									<input type="password" class="form-control" id="inputPassword" placeholder="Password">
 								</div>
 							</div>
-							<a class="btn btn-default" href="/readingbetter/main" type="submit">로그인</a><br><br>
-							<a class="btn btn-default" href="/readingbetter/mypage/join" role="button">회원가입</a>
-							<a class="btn btn-default" href="/readingbetter/mypage/findjoin" role="button">아이디/비밀번호 찾기</a>
+							<a class="btn btn-default" type="submit">로그인</a><br><br>
+							<a href="/readingbetter/mypage/joinform">회원가입</a>
+							<a href="/readingbetter/mypage/findform">아이디/비밀번호 찾기</a>
 						</form>
 					</div>
 				</div>

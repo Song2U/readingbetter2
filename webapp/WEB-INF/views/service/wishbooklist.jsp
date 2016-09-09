@@ -20,7 +20,7 @@
 			<div class="col-lg-10">
 				<div class="small-menu">
 					<a href="/readingbetter/main">홈</a> > 
-					<a href="/readingbetter/service/notice">고객센터</a> > 희망도서 신청
+					<a href="/readingbetter/service/noticelist">고객센터</a> > 희망도서 신청
 				</div>
 				<p class="menu-title">희망도서 신청</p>
 				<form id="search_form" action="/mysite/board" method="post">
@@ -40,7 +40,7 @@
 						</tr>
 						<tr>
 							<td>3</td>
-							<td><a href="">제목</a></td>
+							<td><a href="/readingbetter/service/wishbookview">제목</a></td>
 							<td>작성자</td>
 							<td>3</td>
 							<td>2016-09-07</td>

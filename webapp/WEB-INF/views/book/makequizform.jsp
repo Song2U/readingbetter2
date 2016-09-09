@@ -21,8 +21,8 @@
 				<div id="makequiz">
 					<div class="small-menu">
 						<a href="/readingbetter/main">홈</a> > 
-						<a href="/readingbetter/book/list">독서활동</a> > 
-						<a href="/readingbetter/book/list">책 목록</a> > 문제 내기
+						<a href="/readingbetter/book/booklist">독서활동</a> > 
+						<a href="/readingbetter/book/booklist">책 목록</a> > 문제 내기
 					</div>
 					<p class="menu-title">문제 내기</p>
 					<div id="quiz-content" class="col-lg-6">
@@ -72,7 +72,7 @@
 								</div>
 							</form>
 						</div>
-						<a type="submit" class="btn btn-default" href="/readingbetter/book/list">제출</a>
+						<a type="submit" class="btn btn-default">제출</a>
 					</div>
 				</div>
 			</div>

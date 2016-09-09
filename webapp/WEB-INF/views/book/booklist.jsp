@@ -20,10 +20,10 @@
 			</div>
 			<div id="content" class="col-lg-10">
 				<div id="list">
-					<p class="small-menu">
+					<div class="small-menu">
 						<a href="/readingbetter/main">홈</a> > 
-						<a href="/readingbetter/book/list">독서활동</a> > 책목록
-					</p>
+						<a href="/readingbetter/book/booklist">독서활동</a> > 책목록
+					</div>
 					<p class="menu-title">책 목록</p>
 					<form id="search_form" action="/mysite/board" method="post">
 						<input type="text" id="kwd" name="kwd" value="${kwd }">
@@ -58,8 +58,8 @@
 							<td class="table-left">?</td>
 							<td>
 								<a class="btn btn-default" href="/readingbetter/book/review" role="button">리뷰보기</a>
-								<a class="btn btn-default" href="/readingbetter/book/solvequiz" role="button">문제풀기</a>
-								<a class="btn btn-default" href="/readingbetter/book/makequiz" role="button">문제내기</a>
+								<a class="btn btn-default" href="/readingbetter/book/solvequizform" role="button">문제풀기</a>
+								<a class="btn btn-default" href="/readingbetter/book/makequizform" role="button">문제내기</a>
 							</td>
 						</tr>
 					</table>

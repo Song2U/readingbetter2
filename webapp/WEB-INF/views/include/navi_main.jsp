@@ -4,10 +4,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
+<div id="main">
 <div id="loginbox">
 	<div id="login_before">
 		<h4>
-			로그인<a href="">가입하기</a>
+			로그인<a href="/readingbetter/mypage/join">가입하기</a>
 		</h4>
 		<form>
 			<div class="form-group">
@@ -18,11 +19,11 @@
 				<label for="pwd">비밀번호:</label>
 				<input type="password" class="form-control input-sm" id="pwd">
 			</div>
-			<!-- 		<div class="checkbox">
+			<!--<div class="checkbox">
 			<label><input type="checkbox"> Remember me</label></div> -->
 			<button type="submit" class="btn btn-default">로그인</button>
 		</form>
-		<a href="">아이디/비밀번호 찾기</a>
+		<a href="/readingbetter/mypage/findjoin">아이디/비밀번호 찾기</a>
 	</div>
 
 	<div id="login_after">
@@ -50,4 +51,5 @@
 <div id="helpcall">
 	<h4>상담전화 :</h4>
 	<h4>010) xxx - xxxx</h4>
+</div>
 </div>

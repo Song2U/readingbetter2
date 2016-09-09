@@ -23,8 +23,8 @@
 				<div id="wishbookwrite">
 					<div class="small-menu">
 						<a href="/readingbetter/main">홈</a> > 
-						<a href="/readingbetter/service/notice">고객센터</a> > 
-						<a href="/readingbetter/service/wishbook"> 희망도서 신청</a> > 글쓰기
+						<a href="/readingbetter/service/noticelist">고객센터</a> > 
+						<a href="/readingbetter/service/wishbooklist"> 희망도서 신청</a> > 글쓰기
 					</div>
 
 					<p class="menu-title">희망도서 신청</p>
@@ -56,7 +56,7 @@
 						</table>
 						
 						<div id="buttonalign">
-							<button type="submit" class="btn btn-default">제출</button>
+							<button type="submit" class="btn btn-default">작성</button>
 							<br><br>
 						</div>
 					</div>

@@ -6,8 +6,8 @@
 <div id="navigation">
 	<p id="category">고객센터</p>
 	<ul>
-		<li><a href="/readingbetter/service/notice">공지</a></li>
-		<li><a href="/readingbetter/service/question">문의 게시판</a></li>
-		<li><a href="/readingbetter/service/wishbook">희망도서 신청</a></li>
+		<li><a href="/readingbetter/service/noticelist">공지</a></li>
+		<li><a href="/readingbetter/service/questionlist">문의 게시판</a></li>
+		<li><a href="/readingbetter/service/wishbooklist">희망도서 신청</a></li>
 	</ul>
 </div>
