@@ -1,6 +1,6 @@
 package kr.ac.readingbetter.vo;
 
-public class GuestBookVo {
+public class BookVo {
 	private Long no;
 	private String ID;
 
@@ -22,6 +22,6 @@ public class GuestBookVo {
 
 	@Override
 	public String toString() {
-		return "GuestBookVo [no=" + no + ", ID=" + ID + "]";
+		return "BookVo [no=" + no + ", ID=" + ID + "]";
 	}
 }

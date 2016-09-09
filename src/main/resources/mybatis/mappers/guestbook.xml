@@ -3,21 +3,9 @@
 
 <mapper namespace="guestbook">
 
-	<insert id="insert" parameterType="guestbookvo">
-		<![CDATA[
-			insert into guestbook values(seq_guestbook.nextval, #{name}, #{password}, #{content}, sysdate)
-		]]>
-	</insert>
-	
-	<delete id="delete" parameterType="guestbookvo">
-		<![CDATA[
-			delete from guestbook where no=#{no} and password=#{password}
-		]]>
-	</delete>
-	
 	<select id="list" parameterType="guestbookvo" resultType="guestbookvo">
 		<![CDATA[
-			select no, name, password, content, to_char(reg_date, 'yyyy-mm-dd') from guestbook order by reg_date desc
+			select no, id from testtable
 		]]>
 	</select>
 
