@@ -7,17 +7,20 @@
 <head>
 <title>ReadingBetter</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link href="/readingbetter/assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="/readingbetter/assets/css/admin.css" rel="stylesheet" type="text/css">
-<link href="/readingbetter/assets/css/board.css" rel="stylesheet" type="text/css">
+<link href="/readingbetter/assets/dist/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css">
+<link href="/readingbetter/assets/css/admin.css" rel="stylesheet"
+	type="text/css">
+<link href="/readingbetter/assets/css/board.css" rel="stylesheet"
+	type="text/css">
 </head>
 <body>
 	<div class="container-fluid">
 		<c:import url='/WEB-INF/views/admin/header.jsp' />
 		<h4>카드</h4>
 		<form id="search_form" action="" method="post">
-			<input type="text" id="add" name="add" value="${kwd }"> 
-			<input type="submit" value="찾기">
+			<input type="text" id="add" name="add" value="${kwd }"> <input
+				type="submit" value="찾기">
 		</form>
 		<table class="table" id="board">
 			<tr class="info">
@@ -27,17 +30,18 @@
 				<td>점수</td>
 				<td></td>
 			</tr>
-
-			<tr>
-				<td>2</td>
-				<td>김민정</td>
-				<td>+</td>
-				<td>20</td>
-				<td>
+			<c:forEach items="${getCardList}" var="cardVo">
+				<tr>
+					<td>${cardVo.no }</td>
+					<td>${cardVo.title }</td>
+					<td>$(cardVo.skill)</td>
+					<td>${cardVo.bonus }</td>
+					<td>
 					<a href="" class="btn btn-default">삭제</a>
 					<a href="/readingbetter/admin/cardmodifyform" class="btn btn-default">수정</a>
-				</td>
-			</tr>
+					</td>
+				</tr>
+			</c:forEach>
 		</table>
 		<!-- begin:paging -->
 		<div class="pager">
@@ -54,7 +58,8 @@
 		</div>
 		<!-- end:paging -->
 
-		<a class="btn btn-default" href="/readingbetter/admin/cardaddform" role="button">추가</a>
+		<a class="btn btn-default" href="/readingbetter/admin/cardaddform"
+			role="button">추가</a>
 	</div>
 </body>
 </html>

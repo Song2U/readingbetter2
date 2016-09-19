@@ -6,6 +6,7 @@
 		<typeAlias type="kr.ac.readingbetter.vo.UserVo" alias="uservo"/>
 		<typeAlias type="kr.ac.readingbetter.vo.GuestBookVo" alias="guestbookvo"/>
 		<typeAlias type="kr.ac.readingbetter.vo.ShopVo" alias="shopvo"/>
+		<typeAlias type="kr.ac.readingbetter.vo.CardVo" alias="cardvo"/>
 	</typeAliases>
 	
 	<mappers>
@@ -13,6 +14,7 @@
 		<mapper resource="mybatis/mappers/board.xml" />
 		<mapper resource="mybatis/mappers/guestbook.xml" />
 		<mapper resource="mybatis/mappers/goods.xml" />
+		<mapper resource="mybatis/mappers/card.xml" />
 	</mappers>
 	
 </configuration>

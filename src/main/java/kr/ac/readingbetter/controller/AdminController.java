@@ -49,23 +49,7 @@ public class AdminController {
 	public String NoticeWriteForm() {
 		return "admin/noticewriteform";
 	}
-	
-	// 카드 관리
-	@RequestMapping("/cardlist")
-	public String CardList() {
-		return "admin/cardlist";
-	}
-	
-	@RequestMapping("/cardmodifyform")
-	public String CardModifyForm() {
-		return "admin/cardmodifyform";
-	}
-	
-	@RequestMapping("/cardaddform")
-	public String CardAddForm() {
-		return "admin/cardaddform";
-	}
-	
+		
 	// 신고 관리
 	@RequestMapping("/accusationlist")
 	public String AccusationList() {
