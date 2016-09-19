@@ -13,15 +13,18 @@ public class ShopService {
 	@Autowired
 	private ShopDao shopDao;
 
-	public List<ShopVo> getGoodsList() {
-		return shopDao.getGoodsList();
+	// 상품 리스트 출력
+	public List<ShopVo> getGoodsList(ShopVo vo) {
+		return shopDao.getGoodsList(vo);
 	}
 
-	public List<ShopVo> searchGoodsList() {
-		return shopDao.searchGoodsList();
-	}
-
+	// 상품 추가
 	public void goodsInsert(ShopVo vo) {
 		shopDao.goodsInsert(vo);
+	}
+
+	// 상품 삭제
+	public void goodsDelete(Long no) {
+		shopDao.goodsDelete(no);
 	}
 }

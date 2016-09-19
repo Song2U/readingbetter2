@@ -1,24 +1,25 @@
--- 상점 상품 번호 시퀀스 생성
-create sequence seq_goods
-start with 1
-Increment by 1;
+-- goods 시퀀스 생성
+CREATE SEQUENCE SEQ_GOODS
+START WITH 1
+INCREMENT BY 1;
 
--- 상점 상품 번호 시퀀스 삭제
-drop sequence seq_goods;
+-- goods 시퀀스 제거
+DROP SEQUENCE SEQ_GOODS;
 
--- DB 등록 커밋
-commit;
+-- 상품 DB commit
+COMMIT;
 
--- 상점 목록 불러오기
-select no, cover, title, price from goods;
+-- 최근에 커밋한 상태로 되돌리기
+ROLLBACK;
 
--- 상품 정보 등록
-INSERT INTO "GOODS" VALUES (seq_goods.nextval, '페레로로쉐', '10', 'http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/ferrero.png');
-INSERT INTO "GOODS" VALUES (seq_goods.nextval, '비타 500', '10', 'http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/bita500.png');
-INSERT INTO "GOODS" VALUES (seq_goods.nextval, '불닭볶음면', '10', 'http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/ramen2.png');
-INSERT INTO "GOODS" VALUES (seq_goods.nextval, '왕뚜껑', '10', 'http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/ramen1.png');
-INSERT INTO "GOODS" VALUES (seq_goods.nextval, '놀부부대찌개컵라면', '10', 'http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/ramen3.png');
-INSERT INTO "GOODS" values(seq_goods.nextval, '피카츄', '10', 'http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/pikachu.png');
+-- 상품 목록 조회 (번호 내림차순)
+SELECT NO, COVER, TITLE, PRICE FROM GOODS ORDER BY NO DESC;
+
+-- 상품 등록
+INSERT INTO "GOODS" VALUES(SEQ_GOODS.NEXTVAL, '피카츄', '10', 'http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/pikachu.png');
 
 -- 상품 검색
-select no, cover, title, price from goods where title like '%' || '카' || '%' order by no asc;
+SELECT NO, COVER, TITLE, PRICE FROM GOODS WHERE TITLE LIKE '%' || '카' || '%' ORDER BY NO ASC;
+
+-- 상품 삭제
+DELETE FROM GOODS WHERE NO = 7;

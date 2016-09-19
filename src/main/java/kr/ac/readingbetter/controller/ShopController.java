@@ -20,20 +20,15 @@ public class ShopController {
 	@Autowired
 	private ShopService shopService;
 
-	// 상품 리스트
+	// 상품 리스트 폼 및 출력
 	@RequestMapping("/shoplist")
-	public String GoodsList(Model model) {
-		List<ShopVo> getGoodsList = shopService.getGoodsList();
+	public String GoodsList(Model model, ShopVo vo) {
+		if (vo.getTitle() == null) {	// 검색할 상품명이 없으면 빈 문자열로 교체
+			vo.setTitle("");
+		}
+		List<ShopVo> getGoodsList = shopService.getGoodsList(vo);
 		model.addAttribute("getGoodsList", getGoodsList);
 		return "admin/shoplist";
-	}
-
-	// 상품 검색
-	@RequestMapping(value = "/goodssearch", method = RequestMethod.GET)
-	public String searchGoodsList(Model model) {
-		List<ShopVo> searchGoodsList = shopService.searchGoodsList();
-		model.addAttribute("searchGoodsList", searchGoodsList);
-		return "redirect:shoplist";
 	}
 
 	// 상품 등록 폼
@@ -48,5 +43,12 @@ public class ShopController {
 		System.out.println(vo);
 		shopService.goodsInsert(vo);
 		return "redirect:shoplist";
+	}
+
+	// 상품 삭제
+	@RequestMapping(value = "/shoplist/delete")
+	public String GoodsDelete(Long no) {
+		shopService.goodsDelete(no);
+		return "redirect:/admin/shoplist";
 	}
 }

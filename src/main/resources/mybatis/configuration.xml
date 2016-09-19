@@ -5,12 +5,14 @@
 	<typeAliases>
 		<typeAlias type="kr.ac.readingbetter.vo.UserVo" alias="uservo"/>
 		<typeAlias type="kr.ac.readingbetter.vo.GuestBookVo" alias="guestbookvo"/>
+		<typeAlias type="kr.ac.readingbetter.vo.ShopVo" alias="shopvo"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mybatis/mappers/user.xml" />
 		<mapper resource="mybatis/mappers/board.xml" />
 		<mapper resource="mybatis/mappers/guestbook.xml" />
+		<mapper resource="mybatis/mappers/goods.xml" />
 	</mappers>
 	
 </configuration>

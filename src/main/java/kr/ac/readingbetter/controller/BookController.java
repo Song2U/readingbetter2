@@ -10,6 +10,7 @@ public class BookController {
 	@RequestMapping("/booklist")
 	public String BookList() {		
 		return "book/booklist";
+		
 	}
 	
 	@RequestMapping("/solvequizform")

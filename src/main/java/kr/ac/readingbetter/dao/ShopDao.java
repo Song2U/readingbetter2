@@ -14,15 +14,15 @@ public class ShopDao {
 	@Autowired
 	private SqlSession sqlSession;
 
-	public List<ShopVo> getGoodsList() {
-		return sqlSession.selectList("goods.getGoodsList");
-	}
-
-	public List<ShopVo> searchGoodsList() {
-		return sqlSession.selectList("goods.searchGoodsList");
+	public List<ShopVo> getGoodsList(ShopVo vo) {
+		return sqlSession.selectList("goods.getGoodsList", vo);
 	}
 
 	public void goodsInsert(ShopVo vo) {
 		sqlSession.insert("goods.goodsInsert", vo);
+	}
+
+	public void goodsDelete(Long no) {
+		sqlSession.delete("goods.goodsDelete", no);
 	}
 }

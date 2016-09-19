@@ -24,9 +24,10 @@
 	<h4>상품 목록</h4>
 	<br>
 	<br>
-	<form id="search_form" action="goodssearch"	method="post">
-		<input type="text" id="title" name="title" value="${title }">
-		<input type="submit" value="찾기">
+	<form id="search_form" action="/readingbetter/admin/shoplist"
+		method="post">
+		<input type="text" id="title" name="title"> <input
+			type="submit" value="찾기">
 	</form>
 
 	<div>
@@ -41,36 +42,19 @@
 					<th>삭제</th>
 				</tr>
 			</thead>
-			<c:choose>
-				<c:when test="${searchGoodsList }">
-					<c:forEach items="${searchGoodsList }" var="shopVo">
-						<tbody>
-							<tr>
-								<td>${shopVo.no}</td>
-								<td><img id="img-shop" class="img-thumbnail"
-									src="${shopVo.cover}" /></td>
-								<td>${shopVo.title}</td>
-								<td>${shopVo.price}</td>
-								<td><a href="">삭제</a></td>
-							</tr>
-						</tbody>
-					</c:forEach>
-				</c:when>
-				<c:otherwise>
-					<c:forEach items="${getGoodsList}" var="shopVo">
-						<tbody>
-							<tr>
-								<td>${shopVo.no}</td>
-								<td><img id="img-shop" class="img-thumbnail"
-									src="${shopVo.cover}" /></td>
-								<td>${shopVo.title}</td>
-								<td>${shopVo.price}</td>
-								<td><a href="">삭제</a></td>
-							</tr>
-						</tbody>
-					</c:forEach>
-				</c:otherwise>
-			</c:choose>
+			<c:forEach items="${getGoodsList}" var="shopVo">
+				<tbody>
+					<tr>
+						<td>${shopVo.no}</td>
+						<td><img id="img-shop" class="img-thumbnail"
+							src="${shopVo.cover}" /></td>
+						<td>${shopVo.title}</td>
+						<td>${shopVo.price}</td>
+						<td><a
+							href="/readingbetter/admin/shoplist/delete?no=${shopVo.no}">삭제</a></td>
+					</tr>
+				</tbody>
+			</c:forEach>
 		</table>
 
 		<!-- begin:paging -->

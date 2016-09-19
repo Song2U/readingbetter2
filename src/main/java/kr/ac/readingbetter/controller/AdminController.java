@@ -50,17 +50,6 @@ public class AdminController {
 		return "admin/noticewriteform";
 	}
 	
-	// 상점 관리
-	@RequestMapping("/shoplist")
-	public String ShopList() {
-		return "admin/shoplist";
-	}
-	
-	@RequestMapping("/shopaddform")
-	public String ShopAddForm() {
-		return "admin/shopaddform";
-	}
-	
 	// 카드 관리
 	@RequestMapping("/cardlist")
 	public String CardList() {
