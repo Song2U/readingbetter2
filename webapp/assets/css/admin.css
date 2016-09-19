@@ -1,9 +1,22 @@
 @CHARSET "UTF-8";
 
-* { margin: 0; padding: 0; }
-body { font: 13px "맑은 고딕", 돋움, 굴림; text-align: center; }
-html, body { height: 100% !important; }
-ul, ol { list-style-type: none }
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 13px "맑은 고딕", 돋움, 굴림;
+	text-align: center;
+}
+
+html, body {
+	height: 100% !important;
+}
+
+ul, ol {
+	list-style-type: none
+}
 
 h4 {
 	font-weight: bold;
@@ -48,17 +61,6 @@ td.left-label {
 /* noticewrite */
 #contents {
 	height: 100%;
-}
-
-/* shop */
-#goodsname {
-	width: 60%;
-	margin-left: 15%;
-	margin-right: 2%;
-}
-
-#searchgoods {
-	width: 100px;
 }
 
 /* admin 테이블 공통 */
