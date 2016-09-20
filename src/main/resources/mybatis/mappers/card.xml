@@ -4,7 +4,22 @@
 <mapper namespace="card">
 	<select id="getCardList" parameterType="cardvo" resultType="cardvo">
 		<![CDATA[
-			select no, cover, title, price from goods where title like '%' || #{title} || '%' order by no desc
+			select no, title, skill, bonus, cover from card where title like '%' || #{title} || '%' order by no desc
 		]]>
 	</select>
+	<insert id="insertCard" parameterType="cardvo">
+		<![CDATA[
+			INSERT INTO "CARD" VALUES(SEQ_CARD.NEXTVAL, #{title}, #{content}, #{skill}, #{bonus}, #{cover})
+		]]>
+	</insert>
+	<delete id="deleteCard" parameterType="java.lang.Long">
+		<![CDATA[
+			DELETE FROM CARD WHERE NO = #{no}
+		]]>
+	</delete>
+	<update id="modifyCard" parameterType="cardvo">
+		<![CDATA[
+			UPDATE "CARD" SET TITLE = #{title}, CONTENT = #{content}, SKILL = #{skill}, BONUS = #{bonus}, COVER = #{cover} WHERE NO = #{no}
+		]]>
+	</update>
 </mapper>

@@ -14,6 +14,18 @@ public class CardDao {
 	private SqlSession sqlSession;
 
 	public List<CardVo> getCardList(CardVo vo) {
-		return sqlSession.selectList("cards.getCardList", vo);
+		return sqlSession.selectList("card.getCardList", vo);
+	}
+
+	public void deleteCard(Long no) {
+		sqlSession.delete("card.deleteCard", no);
+	}
+
+	public void insertCard(CardVo vo) {
+		sqlSession.insert("card.insertCard", vo);
+	}
+
+	public void modifyCard(CardVo vo) {
+		sqlSession.update("card.modifyCard", vo);
 	}
 }

@@ -18,7 +18,7 @@ public class CardController {
 
 	// 카드 리스트 및 폼 출력
 	@RequestMapping("/cardlist")
-	public String CardList(CardVo vo, Model model) {
+	public String CardList(Model model, CardVo vo) {
 		if (vo.getTitle() == null) {
 			vo.setTitle("");
 		}
@@ -27,13 +27,38 @@ public class CardController {
 		return "admin/cardlist";
 	}
 
-	@RequestMapping("/cardmodifyform")
-	public String CardModifyForm() {
-		return "admin/cardmodifyform";
-	}
-
+	// 카드 등록 폼
 	@RequestMapping("/cardaddform")
 	public String CardAddForm() {
 		return "admin/cardaddform";
+	}
+
+	// 카드 등록
+	@RequestMapping("/cardaddform/cardadd")
+	public String insertCard(CardVo vo) {
+		System.out.println(vo);
+		cardService.insertCard(vo);
+		return "redirect:/admin/cardlist";
+	}
+
+	// 카드 수정 폼
+	@RequestMapping("/cardmodifyform")
+	public String CardModifyForm(Long no) {
+		System.out.println("no : " + no);
+		return "admin/cardmodifyform";
+	}
+
+	// 카드 수정
+	@RequestMapping("/cardmodifyform/modify")
+	public String ModifyCard(CardVo vo){
+		cardService.modifyCard(vo);
+		return "redirect:/admin/cardlist";
+	}
+	
+	// 카드 삭제
+	@RequestMapping("/cardlist/delete")
+	public String DeleteCard(Long no) {
+		cardService.deleteCard(no);
+		return "redirect:/admin/cardlist";
 	}
 }

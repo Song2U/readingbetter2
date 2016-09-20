@@ -68,7 +68,14 @@ td.left-label {
 	vertical-align: middle;
 }
 
+/* shop */
 #goodsimage {
 	width: 150px;
 	height: 150px;
+}
+
+/* card */
+#img-card {
+	width: 150px;
+	height: 200px;
 }

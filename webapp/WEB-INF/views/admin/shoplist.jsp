@@ -24,10 +24,8 @@
 	<h4>상품 목록</h4>
 	<br>
 	<br>
-	<form id="search_form" action="/readingbetter/admin/shoplist"
-		method="post">
-		<input type="text" id="title" name="title"> <input
-			type="submit" value="찾기">
+	<form id="search_form" action="/readingbetter/admin/shoplist" method="post">
+		<input type="text" id="title" name="title"> <input type="submit" value="찾기">
 	</form>
 
 	<div>
@@ -56,21 +54,6 @@
 				</tbody>
 			</c:forEach>
 		</table>
-
-		<!-- begin:paging -->
-		<div class="pager">
-			<ul>
-				<li><a href="">◀</a></li>
-				<li><a href="">1</a></li>
-				<li><a href="">2</a></li>
-				<li><a href="">3</a></li>
-				<li><a href="">4</a></li>
-				<li><a href="">5</a></li>
-				<li><a href="">▶</a></li>
-			</ul>
-		</div>
-		<!-- end:paging -->
-
 		<div id="buttons">
 			<a href="shopaddform" class="btn btn-default">추가</a>
 		</div>

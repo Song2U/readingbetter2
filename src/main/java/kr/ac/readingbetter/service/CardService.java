@@ -17,4 +17,16 @@ public class CardService {
 	public List<CardVo> getCardList(CardVo vo) {
 		return cardDao.getCardList(vo);
 	}
+
+	public void deleteCard(Long no) {
+		cardDao.deleteCard(no);
+	}
+
+	public void insertCard(CardVo vo) {
+		cardDao.insertCard(vo);
+	}
+
+	public void modifyCard(CardVo vo) {
+		cardDao.modifyCard(vo);
+	}
 }

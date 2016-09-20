@@ -6,7 +6,7 @@ INCREMENT BY 1;
 -- goods 시퀀스 제거
 DROP SEQUENCE SEQ_GOODS;
 
--- 상품 DB commit
+-- DB commit
 COMMIT;
 
 -- 최근에 커밋한 상태로 되돌리기
