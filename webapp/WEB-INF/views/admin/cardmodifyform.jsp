@@ -15,7 +15,8 @@
    <div class="container-fluid">
       <c:import url='/WEB-INF/views/admin/header.jsp'/>
       <br><br><h4>카드 수정</h4>      <br><br>
-      <form action="/readingbetter/admin/cardmodifyform/modify?no=${cardVo.no }" method="post">
+      <form action="/readingbetter/admin/cardmodifyform/modify" method="post">
+      <input type="hidden" name="no" value="${cardVo.no }"/>
       <table class="table" id="board">
           <tr class="info">
              <td>이름</td>

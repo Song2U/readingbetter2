@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.ac.readingbetter.service.CardService;
 import kr.ac.readingbetter.vo.CardVo;
@@ -42,9 +43,12 @@ public class CardController {
 	}
 
 	// 카드 수정 폼
-	@RequestMapping("/cardmodifyform")
-	public String CardModifyForm(Long no) {
+	@RequestMapping(value = "/cardmodifyform")
+	public String CardModifyForm(Long no, Model model) {
 		System.out.println("no : " + no);
+		CardVo vo = cardService.getCardByNo(no);
+		System.out.println(vo);
+		model.addAttribute("cardVo", vo);
 		return "admin/cardmodifyform";
 	}
 

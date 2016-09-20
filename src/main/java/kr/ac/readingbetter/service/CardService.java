@@ -26,6 +26,10 @@ public class CardService {
 		cardDao.insertCard(vo);
 	}
 
+	public CardVo getCardByNo(Long no) {
+		return cardDao.getCardByNo(no);
+	}
+	
 	public void modifyCard(CardVo vo) {
 		cardDao.modifyCard(vo);
 	}

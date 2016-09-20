@@ -35,21 +35,18 @@
 			<c:forEach items="${getCardList}" var="cardVo">
 				<tr>
 					<td>${cardVo.no }</td>
-					<td><img id="img-card" class="img-thumbnail"
-						src="${cardVo.cover}" /></td>
+					<td><img id="img-card" class="img-thumbnail" src="${cardVo.cover}" /></td>
 					<td>${cardVo.title }</td>
 					<td>${cardVo.skill }</td>
 					<td>${cardVo.bonus }</td>
-					<td><a
-						href="/readingbetter/admin/cardmodifyform?no=${cardVo.no }"
-						class="btn btn-default">수정</a> <a
-						href="/readingbetter/admin/cardlist/delete?no=${cardVo.no }"
-						class="btn btn-default">삭제</a></td>
+					<td>
+					<a href="/readingbetter/admin/cardmodifyform?no=${cardVo.no }" class="btn btn-default">수정</a>
+					<a href="/readingbetter/admin/cardlist/delete?no=${cardVo.no }" class="btn btn-default">삭제</a>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>
-		<a class="btn btn-default" href="/readingbetter/admin/cardaddform"
-			role="button">추가</a>
+		<a class="btn btn-default" href="/readingbetter/admin/cardaddform" role="button">추가</a>
 	</div>
 </body>
 </html>

@@ -25,6 +25,10 @@ public class CardDao {
 		sqlSession.insert("card.insertCard", vo);
 	}
 
+	public CardVo getCardByNo(Long no) {
+		return sqlSession.selectOne("card.getCardByNo", no);
+	}
+
 	public void modifyCard(CardVo vo) {
 		sqlSession.update("card.modifyCard", vo);
 	}
